@@ -1,0 +1,112 @@
+body
+{
+  background-image: url("https://images.unsplash.com/photo-1549740425-5e9ed4d8cd34?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: inherit;
+  background-repeat: no-repeat;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+.currenttime1
+{
+   font-size:xx-large;
+   width:50%;
+}
+.title
+{
+    font-size: 50px;
+}
+.container
+{
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(255,206,0,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Timer
+{
+     background-color: rgb(255, 255, 255);
+     padding: 30px;
+     text-align: center;
+     font-size: 10vh;
+     border-radius: 8px;
+     box-shadow: 0 0 12px rgb(0, 0, 0);
+     animation: pulse 1.5s infinite alternate;
+}
+@keyframes pulse {
+    from
+    {
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.05);
+    }
+}
+.Timer span
+{
+   width: 110px;
+   display: inline-block;
+   text-align: center;
+}
+.controls
+{
+   text-align: center;
+   padding: 10px;
+   gap: 1rem;
+}
+button
+{
+    padding: 0.75rem 1.5rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 215, 186);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 1s ease-in-out;
+    font: bolder;
+}
+button:hover
+{
+    background-color: rgb(44, 222, 207);
+    color: aqua;
+}
+.stopWatch
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.laps
+{
+    width:100%;
+}
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 200px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);;
+}
+li
+{
+     padding: 1rem;
+     border-bottom: 1px solid #e0e0e0;
+}
+li:last-chlid
+{
+    border-bottom: none;
+}
+li span{
+    font-weight: 700;
+}
+
+
